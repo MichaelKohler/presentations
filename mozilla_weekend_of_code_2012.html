@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Firefox Source Code 101</title>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <meta name="description" content="Mozilla Webmaker Event Zurich June 23 2012">
   <meta name="author" content="Michael Kohler">
 
@@ -21,7 +21,7 @@
       font-size: 13pt;
       text-align: left;
     }
-    
+
     td {
       padding-left: 30px;
     }
@@ -69,19 +69,19 @@
        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
        onload="init();"
        onunload="SidebarUtils.setMouseoverURL('');"&gt;
- 
-   &lt;script type="application/javascript" 
+
+   &lt;script type="application/javascript"
            src="chrome://browser/content/bookmarks/sidebarUtils.js"/&gt;
-   &lt;script type="application/javascript" 
+   &lt;script type="application/javascript"
            src="chrome://browser/content/bookmarks/bookmarksPanel.js"/&gt;
- 
+
    &lt;commandset id="placesCommands"/&gt;
    &lt;commandset id="editMenuCommands"/&gt;
    &lt;menupopup id="placesContext"/&gt;
- 
+
    &lt;!-- Bookmarks and history tooltip --&gt;
    &lt;tooltip id="bhTooltip"/&gt;
- 
+
    &lt;hbox id="sidebar-search-container" align="center"&gt;
      &lt;label id="sidebar-search-label"
             value="&search.label;" accesskey="&search.accesskey;" control="search-box"/&gt;
@@ -106,13 +106,13 @@
        }
        catch (ex) { Cu.reportError(ex); } // file was write-locked?
      }
- 
+
      // at this point, we've as good as resumed the session, so we can
      // clear the resume_session_once flag, if it's set
      if (this._loadState != STATE_QUITTING &&
          this._prefBranch.getBoolPref("sessionstore.resume_session_once"))
        this._prefBranch.setBoolPref("sessionstore.resume_session_once", false);
- 
+
      this._initialized = true;
           </code></pre>
         </section>
@@ -127,21 +127,21 @@
  #menubar-items {
    -moz-box-orient: vertical; /* for flex hack */
  }
- 
+
  #main-menubar {
    -moz-box-flex: 1; /* make menu items expand to fill toolbar height */
  }
- 
+
  #navigator-toolbox {
    -moz-appearance: none;
    background-color: transparent;
    border-top: none;
  }
- 
+
  #main-window:not([disablechrome]) #navigator-toolbox[tabsontop=true] {
    border-bottom: 1px solid ThreeDShadow;
  }
- 
+
  #navigator-toolbox[tabsontop=true] > toolbar:not(:-moz-lwtheme):not(#toolbar-menubar):not(#TabsToolbar),
  #navigator-toolbox[tabsontop=false] > toolbar:not(:-moz-lwtheme):not(#toolbar-menubar) {
    -moz-appearance: none;
@@ -151,7 +151,7 @@
           </code></pre>
         </section>
         <section>
-          <img src="http://farm9.staticflickr.com/8018/7421998892_031ccbec70_z.jpg" />
+          <img src="https://farm9.staticflickr.com/8018/7421998892_031ccbec70_z.jpg" />
           <aside id="imagecourtesy">Image from <a href="http://www.flickr.com/photos/78294107@N06/7421998892/in/photostream/">flickr</a></aside>
         </section>
         <section>
@@ -171,16 +171,16 @@ public void onCreate(Bundle savedInstanceState) {
 
     mGoButton = (ImageButton) findViewById(R.id.awesomebar_button);
     mText = (AwesomeBarEditText) findViewById(R.id.awesomebar_text);
- 
+
     TabWidget tabWidget = (TabWidget) findViewById(android.R.id.tabs);
     tabWidget.setDividerDrawable(null);
- 
+
     mAwesomeTabs = (AwesomeBarTabs) findViewById(R.id.awesomebar_tabs);
     mAwesomeTabs.setOnUrlOpenListener(new AwesomeBarTabs.OnUrlOpenListener() {
     public void onUrlOpen(String url) {
         openUrlAndFinish(url);
     }
- 
+
     public void onSearch(String engine, String text) {
         openSearchAndFinish(text, engine);
     }
@@ -246,7 +246,7 @@ public void onCreate(Bundle savedInstanceState) {
         </section>
         <section>
           <h2>Released under Creative Commons</h2>
-          <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+          <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
           <p style="padding-top: 30px;">You can find all my presentations at<br /><a href="http://presentations.michaelkohler.info">presentations.michaelkohler.info/</a>.</p>
 
     </div>
@@ -263,7 +263,7 @@ public void onCreate(Bundle savedInstanceState) {
 	<div class="progress"><span></span></div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="../libs/reveal.js/js/reveal.js"></script>
 
 <!-- INIT SLIDES -->

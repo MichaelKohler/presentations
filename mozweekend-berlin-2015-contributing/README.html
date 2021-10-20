@@ -1,5 +1,5 @@
 <style>
-@import "http://fonts.googleapis.com/css?family=Open Sans:regular,semibold,italic,italicsemibold|Inconsolata&amp;v2";
+@import "https://fonts.googleapis.com/css?family=Open Sans:regular,semibold,italic,italicsemibold|Inconsolata&amp;v2";
 body {
   font-family: "Open Sans";
   margin: 6em 2em 2em 2em;
