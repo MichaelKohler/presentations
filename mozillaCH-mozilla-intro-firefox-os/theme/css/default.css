@@ -1366,7 +1366,7 @@ slide {
 
 slide:after {
     display: block;
-    background-image: url(../../imgs/bg_fox_tail.png);
+    background-image: url(../../../shared/imgs/bg_fox_tail.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 85px 80px;
@@ -1467,7 +1467,7 @@ slide.blue .light {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../../imgs/grid-s.svg);
+    background-image: url(../../../shared/imgs/grid-s.svg);
     background-size: 16px 16px;
     opacity: 0.2;
 }
