@@ -707,7 +707,7 @@ SlideDeck.prototype.loadAnalytics_ = function() {
 (function() {
   Modernizr.load({
     test: !!document.body.classList && !!document.body.dataset,
-    nope: ['js/polyfills/classList.min.js', 'js/polyfills/dataset.min.js'],
+    nope: ['../shared/js/polyfills/classList.min.js', '../shared/js/polyfills/dataset.min.js'],
     complete: function() {
       window.slidedeck = new SlideDeck();
     }
