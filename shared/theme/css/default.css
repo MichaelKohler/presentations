@@ -1356,7 +1356,7 @@ slide {
 
 slide:after {
     display: block;
-    background-image: url(../../imgs/bg_fox_tail.png);
+    background-image: url(../../imgs/bg_fox_tail.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 85px 80px;

@@ -81,7 +81,7 @@ body:after {
 	width:153px;
 	height:41px;
         z-index:9999;
-	background:url(../../../../../shared/shower/themes/mozilla/images/tab-2.png);
+	background:url(../../../../../shared/shower/themes/mozilla/images/tab-2.webp);
 	content:'';
 }
 small {
@@ -114,7 +114,7 @@ small {
     width: 1024px;
     height: 640px;
     background: #FFF;
-    background:url(../../../../../shared/shower/themes/mozilla/images/bg-sandstone-2.png);
+    background:url(../../../../../shared/shower/themes/mozilla/images/bg-sandstone-2.webp);
     color: #fff;
     -webkit-print-color-adjust: exact;
     -webkit-text-size-adjust: none;
@@ -126,10 +126,10 @@ small {
     font-weight:bold !important;
 }
 .slide.red {
-    background: url(../../../../../shared/shower/themes/mozilla/images/bg-red-2.png);
+    background: url(../../../../../shared/shower/themes/mozilla/images/bg-red-2.webp);
 }
 .slide.blue {
-    background: url(../../../../../shared/shower/themes/mozilla/images/bg-blue-2.png);
+    background: url(../../../../../shared/shower/themes/mozilla/images/bg-blue-2.webp);
 }
 .slide.white {
     background-color: white !important;
@@ -141,7 +141,7 @@ small {
   padding-top: 25%;
 }
 .slide.darkgray {
-    background: url(../../../../../shared/shower/themes/mozilla/images/bg-darkgrey-2.png);
+    background: url(../../../../../shared/shower/themes/mozilla/images/bg-darkgrey-2.webp);
 }
 .slide.gradient-nightly {
     background: -webkit-linear-gradient(0deg, rgba(0,33,71,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
@@ -471,7 +471,7 @@ li {
     position: absolute;
     clip: rect(0, auto, auto, 0);
     padding: 80px 0 40px 100px;
-    background:#585A5E url(../../../../../shared/shower/themes/mozilla/images/bg-blue-2.png) fixed;
+    background:#585A5E url(../../../../../shared/shower/themes/mozilla/images/bg-blue-2.webp) fixed;
 }
 .list .caption, .list .badge {
     display: block;
