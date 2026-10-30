@@ -74,24 +74,5 @@
 	<script src="../shared/js/slide-nav-legacy.js"></script>
 	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
 
-<!-- SOCKETS -->
-<script src="../libs/socket.io.js"></script>
-<script>
-(function(window, document) {
-  var socket = io.connect('/');
-
-  // handle the message from the controller
-  socket.on('message', function(e) {
-    if(e.state) {
-      if (e.state == 1)
-        scrollToSlide(getCurrentSlideNumber() + 1);
-      else if (e.state == -1)
-        scrollToSlide(getCurrentSlideNumber() - 1);
-    }
-  });
-
-})(this, this.document);
-</script>
-
 </body>
 </html>
