@@ -301,14 +301,6 @@ SlideDeck.prototype.loadConfig_ = function(config) {
     prettyPrint();
   }
 
-  if (settings.analytics) {
-    this.loadAnalytics_();
-  }
-
-  if (settings.fonts) {
-    this.addFonts_(settings.fonts);
-  }
-
   // Builds. Default to on.
   if (!!!('useBuilds' in settings) || settings.useBuilds) {
     this.makeBuildLists_();
@@ -348,18 +340,6 @@ SlideDeck.prototype.loadConfig_ = function(config) {
       }
     };
   }
-};
-
-/**
- * @private
- * @param {Array.<string>} fonts
- */
-SlideDeck.prototype.addFonts_ = function(fonts) {
-  var el = document.createElement('link');
-  el.rel = 'stylesheet';
-  el.href = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://fonts.googleapis.com/css?family=' + fonts.join('|') + '&v2';
-  document.querySelector('head').appendChild(el);
 };
 
 /**
@@ -640,10 +620,6 @@ SlideDeck.prototype.updateHash_ = function(dontPush) {
     } else {
       window.location.replace(hash);
     }
-
-    // Record GA hit on this slide.
-    window['_gaq'] && window['_gaq'].push(['_trackPageview',
-                                          document.location.href]);
   }
 };
 
@@ -683,21 +659,6 @@ SlideDeck.prototype.loadTheme_ = function(theme) {
     }
     document.querySelector('head').appendChild(style);
   }
-};
-
-/**
- * @private
- */
-SlideDeck.prototype.loadAnalytics_ = function() {
-  var _gaq = window['_gaq'] || [];
-  _gaq.push(['_setAccount', this.config_.settings.analytics]);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 };
 
 
